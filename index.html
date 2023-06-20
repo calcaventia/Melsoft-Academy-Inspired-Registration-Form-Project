@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melsoft Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Homemade+Apple&family=Indie+Flower&family=La+Belle+Aurore&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Script&family=Nanum+Myeongjo&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!--main container-->
+    <div class="main-container">
+      <!--image logo-->
+      <img
+        src="images/Melsoft logo.png"
+        alt="Instituition logo"
+        class="melsoft-logo"
+      />
+
+      <!--form header-->
+      <div class="row" id="form-header">
+        <div class="col-6" id="create-account">
+          <h1 id="createAccount">Create an Account</h1>
+        </div>
+        <div class="col-6" id="sign-in1">
+          <p>
+            or
+            <a
+              href="https://app.melsoftacademy.com/wp-login.php"
+              class="sign-in"
+              >sign in</a
+            >
+          </p>
+        </div>
+      </div>
+      <!--form header end-->
+
+      <!--input form-->
+      <form class="row" id="registrationForm" onsubmit="validateForm(event)">
+        <div class="col-12">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required />
+          <small id="emailError" class="text-danger"></small>
+        </div>
+        <div class="col-12">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required />
+          <small id="passwordError" class="text-danger"></small>
+        </div>
+        <div class="col-12">
+          <label for="passwordMatch" class="form-label">Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="confirmPassword"
+            required
+          />
+          <small id="confirmPasswordError" class="text-danger"></small>
+        </div>
+        <div class="col-4">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" required />
+          <small id="firstNameError" class="text-danger"></small>
+        </div>
+        <div class="col-4">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required />
+          <small id="lastNameError" class="text-danger"></small>
+        </div>
+        <div class="col-4">
+          <label for="nickName" class="form-label">NickName</label>
+          <input type="text" class="form-control" id="nickName" required />
+          <small id="nickNameError" class="text-danger"></small>
+        </div>
+        <div class="col-6" id="location">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" required />
+          <small id="cityError" class="text-danger"></small>
+        </div>
+        <div class="col-6" id="location-province">
+          <label for="inputProvince" class="form-label">Province </label>
+          <select id="provinceName" class="form-select" required>
+            <option selected disabled>Choose...</option>
+            <option>Eastern Cape</option>
+            <option>Free State</option>
+            <option>Gauteng</option>
+            <option>Kwazulu-Natal</option>
+            <option>Limpopo</option>
+            <option>Mpumalanga</option>
+            <option>North West</option>
+            <option>Northern Cape</option>
+            <option>Western Cape</option>
+          </select>
+          <small id="provinceNameError" class="text-danger"></small>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck"
+              >I agree that I have read the
+              <a href="https://app.melsoftacademy.com/register/" class="terms"
+                >Terms of Service</a
+              >.</label
+            >
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">
+          Create Account
+        </button>
+      </form>
+      <!--input form end-->
+      <div id="successMessage" class="mt-3" style="display: none">
+        <div class="alert alert-success" role="alert">
+          You're Registered! Melsoft Academy site loading...
+        </div>
+      </div>
+    </div>
+    <!--main container end-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

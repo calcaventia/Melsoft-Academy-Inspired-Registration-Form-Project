@@ -1,0 +1,128 @@
+body {
+  background-color: #dde2e8;
+  font-family: "Quicksand", sans-serif;
+  padding: 2%;
+}
+
+.main-container {
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 3% 5% 5% 5%;
+  width: 90%;
+  max-width: 500px;
+  height: 100%;
+  color: #000;
+  background-color: #dde2e8;
+  box-shadow: 7px 7px 14px rgba(90, 90, 90, 0.664),
+    -6px -6px 14px rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+#form-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form {
+  font-size: 20px;
+}
+
+#create-account {
+  text-align: left;
+}
+
+#createAccount {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.form-label {
+  font-size: 18px;
+}
+
+.form-control {
+  background-color: #eeeeee;
+  box-shadow: inset 5px 5px 8px rgb(70, 69, 69),
+    inset -5px -5px 8px rgb(255, 255, 255);
+  border: none;
+  border-radius: 13px;
+}
+
+/* Remove default focus outline */
+.form-control:focus {
+  outline: none;
+  box-shadow: inset 5px 5px 8px rgb(70, 69, 69),
+    inset -5px -5px 8px rgb(255, 255, 255);
+  background-color: #eeeeee;
+}
+
+.form-select {
+  height: 37px;
+  font-size: 17px;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.2);
+  background-color: #eeeeee;
+  border: none;
+}
+
+.form-check {
+  font-size: 15px;
+  padding: 3%;
+}
+
+.sign-in {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #a0136a;
+}
+
+#sign-in1 {
+  text-align: right;
+}
+
+.terms {
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #a0136a;
+}
+
+.terms:hover,
+.sign-in:hover {
+  cursor: pointer;
+  color: #4f247c;
+  text-decoration: none;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0% 10% 0% 10%;
+  background-color: #4f247c;
+  color: #fff;
+  height: 40px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #a0136a;
+}
+
+/* Images*/
+.melsoft-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 170px;
+  width: 100%;
+  padding: 0 0 4% 0;
+}
